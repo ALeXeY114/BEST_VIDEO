@@ -5,6 +5,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 252px;
+
+    @media @mobile-sm {
+        flex-wrap: wrap;  
+        width: 370px;    
+        margin-top: 400px;
+    }
     
     h1{
         font-size: 60px;
@@ -23,25 +29,75 @@
 .collaborate{
     max-width: 600px;
 
+    @media @mobile-sm{
+        width: 375px;
+    }
+
     h2{
         font-size: 36px;
         line-height: 50px;
         font-weight: 600;
         padding-left: 116px;
         width: 610px;
+
+        @media @mobile-sm {
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 600;
+            padding-left: 9px;
+            width: 350px;
+        }
     }
 }
 
 .downloads{
     padding-left: 195px;
 
+    .small_hearts{
+        display: none;
+
+        @media @mobile-sm{            
+            display: flex;
+            justify-content: space-between;            
+        }
+    }
+
+    .big_hearts{
+        @media @mobile-sm{            
+            display: none;
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    @media @mobile-sm{
+        padding-left: 78px;   
+        
+        @media @mobile-sm{            
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    h1{
+        @media @mobile-sm{
+            font-size: 31px;
+        }
+    }
+
     img {
-        padding-top: 10px;
+        padding-top: 10px;        
     }
 
     p{
         padding-left: 3px;
         padding-top: 10px;
+
+        @media @mobile-sm{ 
+            font-size: 9px;
+            padding-top: 0px;
+        }
     }
 }
 
@@ -50,6 +106,10 @@
 
     h1{
         padding-right: 5px;
+
+        @media @mobile-sm{
+            font-size: 31px;
+        }
     }
 
     .stars {
