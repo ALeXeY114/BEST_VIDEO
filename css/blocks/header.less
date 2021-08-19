@@ -9,6 +9,10 @@
 
 .header{
     margin-top: 25px;
+
+    @media @mobile-sm {
+        margin-top: 2px;
+    }
 }
 
 .logo{
@@ -19,18 +23,41 @@
 .logo_img{
     width: 32px;
     height: 32px;
+
+    @media @mobile-sm {
+        
+        img{
+            display: none;
+        }
+
+        
+        background: url(../../img/mobile/metting_m.png) no-repeat;
+        width: 20px;
+        height: 20px;
+        
+    }
+
 }
 
 .logo_name{
     padding-left: 7px;
     font-weight: 600;
     
+    @media @mobile-sm {
+        padding-left: 5px;
+        font-size: 0.9rem;
+    }
+
 }
 
 .nav_bar{   
     display: flex;
     font-size: 0.9rem;
     margin-right: 263px;
+
+    @media @mobile-sm {
+        display: none;
+    }
 }
 
 .nav_bar_item{
@@ -43,6 +70,10 @@
     display: flex;
     align-items: center;
     font-size: 0.9rem;
+
+    @media @mobile-sm {
+        display: none;
+    }
 }
 
 .sign_in_item{
@@ -56,6 +87,17 @@ button{
     width: 136px;
     height: 52px;
     border-radius: 6px;
+}
+
+.burger_menu{
+    display: none;
+
+    @media @mobile-sm {
+        display: block;
+        position: absolute;
+        right:28px;
+        top: 22px;
+    }
 }
 
 
