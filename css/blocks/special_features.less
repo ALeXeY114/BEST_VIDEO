@@ -2,11 +2,31 @@
 
 .special_features{
     margin-top: 130px;
+
+    @media @mobile-sm {
+        margin-top: 49px;
+    }
+
+    .container {
+        @media @mobile-sm {
+            display: flex;
+            flex-wrap: wrap;
+            width: 375px;
+        }
+    }
 }
 
 .features{
     text-align: center;
     padding-left: 43px;
+
+    @media @mobile-sm {
+        padding-left: 2px;
+        font-size: 24px;
+        font-weight: 600px;
+        line-height: 24px;
+        
+    }
 
     h1{
         padding-left: 25px;
@@ -14,13 +34,44 @@
         line-height: 64px;
         font-size: 48px;
         font-stretch: ultra-condensed;
+
+        @media @mobile-sm {
+            padding-left: 0px;
+            font-size: 24px;
+            font-weight: 600px;
+            line-height: 24px;
+            letter-spacing: -1px;
+        }
     }
 
     p{
         font-size: 0.8rem;
-        font-weight: 400px;
+        font-weight: 400;
         line-height: 30px;
         padding-top: 12px;
+
+        .point{
+            display: none;
+        }
+
+        @media @mobile-sm {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.3px;
+            opacity: 50%;
+
+            br{
+                display: none;
+            }
+
+            .end_text{
+                display: none;
+            }
+
+            .point{
+                display: inline;
+            }
+        }
     }
 }
 
@@ -31,6 +82,15 @@
     margin: 0 auto;
     margin-top: 48px;
 
+    @media @mobile-sm {
+        flex-wrap: wrap;
+        margin-top: 27px;
+        margin-left: 17px;
+    
+        img{
+            max-width: 48px;
+        }
+
 }
 
 .features_item{
@@ -40,6 +100,13 @@
     h3{
         font-size: 1.2rem;
         padding-top: 21px;
+
+        @media @mobile-sm {
+            padding-top: 17px;
+            font-size: 20px;
+            line-height: 24.2px;
+            font-weight: 600;
+        }
     }
 
     p{
@@ -47,9 +114,36 @@
         line-height: 26px;
         padding-top: 16px;
         padding-bottom: 5px;
+
+        @media @mobile-sm {
+            opacity: 60%;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            padding-top: 11px;
+        }
     }
 
     a{
         padding-top: 10px
+
+        
     }
+    
+    .features_img_38x48{
+        @media @mobile-sm {
+            max-width: 38px;
+        }
+    }
+    
+    .features_learn{
+        @media @mobile-sm {
+            font-size: 20px;
+            line-height: 16px;
+            font-weight: 500;
+            padding-top: 11px;
+        }
+    }
+}
+
 }
