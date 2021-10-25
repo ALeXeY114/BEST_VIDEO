@@ -3,14 +3,13 @@
 .header{
     display: flex;
     justify-content: space-between;
-    
+    margin-top: 25px;
     height: 52px;
 
-    
-}
-
-.header{
-    margin-top: 25px;
+    @media @mobile {        
+        justify-content: none;
+        flex-wrap: wrap;
+    }
 
     @media @mobile-m {
         margin-top: 2px;
@@ -20,6 +19,7 @@
 .logo{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo_img{
@@ -37,9 +37,8 @@
         
         background: url(../../img/mobile/metting_m.png) no-repeat;
         width: 20px;
-        height: 20px;        
-
-        @media @mobile-m {}
+        height: 20px;
+        
     }
 
 }
@@ -62,6 +61,15 @@
     font-size: 0.9rem;
     margin-right: 263px;
 
+    @media @mobile {
+        padding-top: 15px;
+        width: 675px;
+        margin-right: 0px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        order: 3;
+    }
+
     @media @mobile-m {
         display: none;
     }
@@ -70,7 +78,13 @@
 .nav_bar_item{
     display: flex;
     align-items: center;
-    padding-right: 58px;    
+    flex-wrap: wrap;
+    padding-right: 58px;
+    
+    @media @mobile {
+        padding-right: 10px;
+        
+    }
 }
 
 .sign_in{
@@ -85,6 +99,7 @@
 
 .sign_in_item{
     padding-right: 40px;
+    
 }
 
 button{

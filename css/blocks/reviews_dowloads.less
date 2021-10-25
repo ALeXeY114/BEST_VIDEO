@@ -6,10 +6,14 @@
     justify-content: space-between;
     margin-top: 252px;
 
-    @media @mobile-m {
+    @media @mobile {
         flex-wrap: wrap;  
-        width: 370px;    
+        width: 400px;    
         margin-top: 400px;
+    }
+
+    @media @mobile-m {
+        width: 370px;
     }
     
     h1{
@@ -27,7 +31,7 @@
 
 
 .collaborate{
-    max-width: 600px;    
+    max-width: 600px;
 
     h2{
         font-size: 36px;
@@ -36,11 +40,17 @@
         padding-left: 116px;
         width: 610px;
 
+        @media @mobile {
+            text-align: center;
+            font-size: 24px;
+            line-height: 35px;
+            padding-left: 9px;
+            width: 450px;
+        }
+
         @media @mobile-m {
             font-size: 20px;
             line-height: 30px;
-            font-weight: 600;
-            padding-left: 9px;
             width: 350px;
         }
     }    
@@ -48,6 +58,11 @@
 
 .downloads{
     margin-left: 195px;
+
+    @media @mobile{
+        margin-left: 55px;
+        margin-top: 31px;
+    }
 
     @media @mobile-m{
         margin-left: 79px;
@@ -76,11 +91,17 @@
     }    
 
     h1{
+
+        @media @mobile{
+            display: inline;
+            font-size: 31px;
+            line-height: 0px;
+        }
+
         @media @mobile-m{
             display: inline;
             font-size: 31px;
             line-height: 0px;
-            
         }
     }
 
@@ -103,6 +124,11 @@
 .rating{
     margin-right: 138px;
 
+    @media @mobile{
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+
     @media @mobile-m{
         margin-right: 87px;
         margin-top: 30px;
@@ -110,6 +136,13 @@
 
     h1{
         padding-right: 5px;
+
+        @media @mobile{
+            display: inline;
+            font-size: 31px;
+            line-height: 0px;
+            padding-left: 20px;
+        }
 
         @media @mobile-m{
             display: inline;

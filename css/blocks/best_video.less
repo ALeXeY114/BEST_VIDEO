@@ -17,15 +17,25 @@
     margin-left: 117px;
     width: 510px;
 
-    @media @mobile-m {   
+    @media @mobile {   
         text-align: center;     
+        margin-left: 10px;
+        width: 400px;
+    }
+
+    @media @mobile-m {
         margin-left: 10px;
         width: 300px;
     }
 
     h1{
         width: 510px;
-        padding-top: 95px;   
+        padding-top: 95px;
+
+        @media @mobile {   
+            text-align: center;
+            width: 400px;
+        }
         
         @media @mobile-m {
             text-align: center;
@@ -42,6 +52,8 @@
         font-size: 17px;
         padding-top: 18px;
         line-height: 28px;
+
+        
 
         @media @mobile-m {
             text-align: center;
@@ -85,17 +97,23 @@
     top: 0;
     left: 517px;
 
-    @media @mobile-m {
+    @media @mobile {
         
         img{
             display: none;
         }
         
-        left: -4px;
-        top: 283px;
+        
+        left: 40px;
+        top: 500px;
         background-image: url(../../img/mobile/best_video_m.png);
         width: 350px;
         height: 300px;
+    }
+
+    @media @mobile-m {
+        left: -4px;
+        top: 283px;
         padding-top: 50px;
     }
 }

@@ -5,14 +5,23 @@
     width: 1100px;
     margin-top: 50px;
 
+    @media @mobile {
+        
+        max-width: 500px;
+    }
+
     @media @mobile-m {
         max-width: 350px;
-        
     }
 
     @media @mobile-sm {
         max-width: 310px;
-        
+    }
+}
+
+.partners.container {
+    @media @mobile {
+        margin: 10px;
     }
 }
 
@@ -21,9 +30,20 @@
     justify-content: space-between;
     width: 1110px;
     
+    @media @mobile {
+        flex-wrap: wrap;
+        max-width: 410px;
+        
+    }
 }
 
 .partners_items_big img{
+
+    @media @mobile {
+
+        padding: 15px;
+    }
+
     @media @mobile-m {
         display: none;
         margin: 15px;
@@ -32,6 +52,7 @@
 
 .partners_items_small{
     display: none;
+
 
     @media @mobile-m {
         max-width: 300px;
