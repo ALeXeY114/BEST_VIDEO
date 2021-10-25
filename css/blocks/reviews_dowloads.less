@@ -1,14 +1,25 @@
 // main: ../style.less
 
-
 .reviews_dowloads__items{
     display: flex;
     justify-content: space-between;
     margin-top: 252px;
 
+    @media @notebook {
+        width: 900px;
+        margin-top: 100px;
+    }
+
+    @media @tablet {
+        flex-wrap: wrap;
+        width: 600px;
+        margin-top: 430px;
+        margin-bottom: 50px;
+    }
+
+
     @media @mobile {
-        flex-wrap: wrap;  
-        width: 400px;    
+        width: 400px;
         margin-top: 400px;
     }
 
@@ -33,12 +44,20 @@
 .collaborate{
     max-width: 600px;
 
+    @media @tablet {
+        margin-bottom: 30px;
+    }
+
     h2{
         font-size: 36px;
         line-height: 50px;
         font-weight: 600;
         padding-left: 116px;
         width: 610px;
+
+        @media @notebook {
+            padding-left: 10px;
+        }
 
         @media @mobile {
             text-align: center;
@@ -53,11 +72,15 @@
             line-height: 30px;
             width: 350px;
         }
-    }    
+    }
 }
 
 .downloads{
     margin-left: 195px;
+
+    @media @notebook {
+        margin-left: 25px;
+    }
 
     @media @mobile{
         margin-left: 55px;
@@ -66,29 +89,29 @@
 
     @media @mobile-m{
         margin-left: 79px;
-        margin-top: 31px;           
+        margin-top: 31px;
     }
 
     .small_hearts{
         display: none;
 
-        @media @mobile-m{         
+        @media @mobile-m {
             display: flex;
             line-height: 0px;
-                        
+
             img{
-                padding-right: 1.5px;   
+                padding-right: 1.5px;
             }
         }
     }
 
     .big_hearts{
-        @media @mobile-m{            
+        @media @mobile-m{
             display: none;
             width: 10px;
             height: 10px;
         }
-    }    
+    }
 
     h1{
 
@@ -124,6 +147,11 @@
 .rating{
     margin-right: 138px;
 
+    @media @notebook {
+        margin-left: 50px;
+        margin-right: 0px;
+    }
+
     @media @mobile{
         margin-right: 0px;
         margin-top: 30px;
@@ -153,10 +181,14 @@
     }
 
     .big_stars {
-        padding-top: 5px;  
-        
+        padding-top: 5px;
+
+        @media @notebook {
+            width: 110px;
+        }
+
         @media @mobile-m{
-            display: none;            
+            display: none
         }
     }
 
@@ -180,9 +212,8 @@
 
         @media @mobile-m{
             padding-left: 19px;
-            padding-top: 8px;            
+            padding-top: 8px;
             font-size: 8.5px;
         }
     }
 }
-

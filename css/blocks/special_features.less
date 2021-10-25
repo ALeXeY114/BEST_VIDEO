@@ -13,6 +13,10 @@
 
     .container {
 
+        @media @tablet {
+            width: 700px;
+        }
+
         @media @mobile {
             display: flex;
             flex-wrap: wrap;
@@ -92,7 +96,21 @@
     width: 1135px;
     margin: 0 auto;
     margin-top: 48px;
-    margin-left: -5pxpx;
+    margin-left: 113px;
+    margin-bottom: 50px;
+
+    @media @notebook {
+
+        margin-left: 0px;
+        width: 950px;
+    }
+
+
+    @media @tablet {
+        flex-wrap: wrap;
+        margin-left: 0px;
+        width: 725px;
+    }
 
     @media @mobile {
         flex-wrap: wrap;
@@ -102,11 +120,18 @@
         img{
             max-width: 48px;
         }
-
-}
+    }
 
 .features_item_1{
     padding-left: 3px;
+
+    @media @notebook {
+        padding-right: 15px;
+
+        br{
+            display: none;
+        }
+    }
 
     @media @mobile {
         margin: 0 auto;
@@ -114,6 +139,14 @@
 }
 
 .features_item_2{
+
+    @media @notebook {
+        padding-right: 15px;
+
+        br{
+            display: none;
+        }
+    }
 
     @media @mobile {
         margin: 0 auto;
@@ -134,6 +167,18 @@
 
 .features_item_3{    
     padding-left: 0px;
+
+    @media @notebook {
+        padding-right: 15px;
+
+        br{
+            display: none;
+        }
+    }
+
+    @media @tablet {
+        padding-top: 30px;
+    }
 
     @media @mobile {
         margin: 0 auto;

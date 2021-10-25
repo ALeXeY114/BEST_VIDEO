@@ -19,7 +19,7 @@
 .logo{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+
 }
 
 .logo_img{
@@ -61,10 +61,17 @@
     font-size: 0.9rem;
     margin-right: 263px;
 
+    @media @notebook {
+        margin-right: 0px;
+    }
+
+    @media @tablet {
+        margin-right: 0px;
+    }
+
     @media @mobile {
         padding-top: 15px;
-        width: 675px;
-        margin-right: 0px;
+        width: 675px;        
         flex-wrap: wrap;
         justify-content: space-between;
         order: 3;
@@ -80,6 +87,14 @@
     align-items: center;
     flex-wrap: wrap;
     padding-right: 58px;
+
+    @media @notebook {
+        padding-right: 25px;
+    }
+
+    @media @tablet {
+        padding-right: 15px;
+    }
     
     @media @mobile {
         padding-right: 10px;

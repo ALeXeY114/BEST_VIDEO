@@ -7,6 +7,7 @@
     margin-top: 50px;
     position: relative;
 
+
     @media @mobile-m {
         display: inline;
     }
@@ -17,14 +18,21 @@
     margin-left: 117px;
     width: 510px;
 
-    @media @mobile {   
-        text-align: center;     
+    @media @notebook {
+        margin-left: 5px;
+    }
+
+    @media @tablet {
         margin-left: 10px;
+        width: 700px;
+        text-align: center;
+    }
+
+    @media @mobile {
         width: 400px;
     }
 
     @media @mobile-m {
-        margin-left: 10px;
         width: 300px;
     }
 
@@ -32,13 +40,16 @@
         width: 510px;
         padding-top: 95px;
 
-        @media @mobile {   
-            text-align: center;
+        @media @tablet {
+            width: 700px;
+        }
+
+        @media @mobile {
             width: 400px;
         }
         
         @media @mobile-m {
-            text-align: center;
+            
             font-size: 2rem;
             line-height: 27px;
             font-weight: 600px;
@@ -79,7 +90,7 @@
         font-weight: 500;
         margin-top: 15px; 
 
-        @media @mobile-m{            
+        @media @mobile-m{
             width: 120px;
             height: 40px;
             font-weight: 400;
@@ -97,12 +108,32 @@
     top: 0;
     left: 517px;
 
-    @media @mobile {
+    @media @notebook {
+        left: 350px;
+
+        img {
+            width: 600px;
+        }
+    }
+
+    @media @tablet {
+
+        img {
+            width: 500px;
+        }
+
+        left: 40px;
+        top: 450px;
         
-        img{
+        width: 550px;
+        height: 300px;
+    }
+
+    @media @mobile {
+
+        img {
             display: none;
         }
-        
         
         left: 40px;
         top: 500px;
