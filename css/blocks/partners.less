@@ -5,10 +5,14 @@
     width: 1100px;
     margin-top: 50px;
 
+    @media @mobile-m {
+        max-width: 350px;
+        
+    }
+
     @media @mobile-sm {
-        width: 350px;
-        margin-top: 7px;
-        margin-left: 8px;
+        max-width: 310px;
+        
     }
 }
 
@@ -20,17 +24,17 @@
 }
 
 .partners_items_big img{
-    @media @mobile-sm {
+    @media @mobile-m {
         display: none;
-        margin-left: 15px;
+        margin: 15px;
     }
 }
 
 .partners_items_small{
     display: none;
-    width: 327px;
 
-    @media @mobile-sm {
+    @media @mobile-m {
+        max-width: 300px;
         display: flex;
         justify-content: space-between;
     }

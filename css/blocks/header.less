@@ -3,14 +3,16 @@
 .header{
     display: flex;
     justify-content: space-between;
-    width: 1400px;
+    
     height: 52px;
+
+    
 }
 
 .header{
     margin-top: 25px;
 
-    @media @mobile-sm {
+    @media @mobile-m {
         margin-top: 2px;
     }
 }
@@ -24,7 +26,10 @@
     width: 32px;
     height: 32px;
 
-    @media @mobile-sm {
+    
+
+
+    @media @mobile-m {
         
         img{
             display: none;
@@ -33,6 +38,8 @@
         background: url(../../img/mobile/metting_m.png) no-repeat;
         width: 20px;
         height: 20px;        
+
+        @media @mobile-m {}
     }
 
 }
@@ -41,9 +48,11 @@
     padding-left: 7px;
     font-weight: 600;
     
-    @media @mobile-sm {
+    @media @mobile-m {
         padding-left: 5px;
         font-size: 0.9rem;
+
+        @media @mobile-m {}
     }
 
 }
@@ -53,7 +62,7 @@
     font-size: 0.9rem;
     margin-right: 263px;
 
-    @media @mobile-sm {
+    @media @mobile-m {
         display: none;
     }
 }
@@ -69,7 +78,7 @@
     align-items: center;
     font-size: 0.9rem;
 
-    @media @mobile-sm {
+    @media @mobile-m {
         display: none;
     }
 }
@@ -90,7 +99,7 @@ button{
 .burger_menu{
     display: none;
 
-    @media @mobile-sm {
+    @media @mobile-m {
         display: block;
         position: absolute;
         right:28px;
